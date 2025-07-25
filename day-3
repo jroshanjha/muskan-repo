@@ -1,5 +1,28 @@
 # 2025 - 07 - 24 
 
+
+1. DDL ( Data Definition Language )
+-- Database and table
+-- Create , Truncate , drop , alter 
+-- alter -> rename  existing column 
+-- alter -> add new column
+-- alter -> drop existing column
+-- alter -> changes data types 
+-- alter -> add size of the particular columns   
+-- alter table abc nename abc to pqr 
+
+Keys and Constainsts:- 
+1. Not Null   ( Never store not nulls)
+
+2. Unique   ( Always store unique but may or not null values)
+
+3. Primary Key  ( Always store unique or never null values ) Unique + not null 
+
+4. checks    ( [Male, Female ,Other])  or ( age > 18 ) 
+
+5. Defatult  ( False ) eg.. active  users 
+Salary   ( base salry by defalutl 10000)
+
 use sql_course;
 
 create table if not exists person( personid int, firstname varchar(30) , address varchar(50) );
@@ -25,3 +48,30 @@ describe persons1; select * from persons1;
 -- drop existing column alter table persons1 drop column last_name;
 
 -- again crated two columns alter table persons1 add column lastname varchar(30); alter table persons1 add column created_at datetime ;
+
+
+1. DDL ( Data Definition Language )
+
+- CREATE ( create database structure ,table structure  or news recods or information inserted)
+
+- ALTER ( Modifies database or table structure ) rename columns , changes the data types remove columns created new columns 
+
+- Rename ( Rename )
+Columns -> name -> ->user_info
+
+- TRUNCATE ( Only remove all information at time ) -> Very dengerious 
+
+POST ( TABLE )
+post_id, name, description ,   post_date   , user_id  , update_date 
+1        post1      desc1      2025-02-06    1          2025-02-06 
+2        post2      desc2      2025-02-06    1
+3        post3      desc3      2025-02-06    2
+
+
+Truncate table post 
+
+POST ( TABLE )
+post_id, name, description ,   post_date   , user_id  , update_date
+
+- DROP  ( Database structures or Table Structures with information removed at a time ) -> very serious
+
