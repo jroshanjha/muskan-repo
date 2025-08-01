@@ -1,0 +1,36 @@
+-- 30-07-2025
+use sql_course;
+select * from stu_performance;
+
+select* from product;
+ 
+ select * from medical;
+ 
+--  update medical set bmi = null where age = 33;
+
+ -- count 
+ 
+ -- total number of records  without ignore null values
+ select count(*) from medical;
+ 
+ -- total number of records for specific column 
+ -- and with ignoure null value
+ 
+ select count(bmi) from medical;
+ 
+ -- distinct 
+ -- get unique records
+ select distinct * from medical
+ 
+ -- get unique records for specific records
+ select distinct children from medical;
+ -- count
+ select count(attendance)from stu_performance;
+ select count(*)from stu_performance;
+ 
+ -- distinct
+ select * from stu_performance;
+
+
+ 
+ -- update stu_performance set 
