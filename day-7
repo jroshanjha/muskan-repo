@@ -1,0 +1,43 @@
+#2025 - 08 - 01 
+
+  -- arithmetical
+ select bmi , (bmi + 12) as total, 
+ (bmi - 2 ) as sub,
+ (bmi * 2 )as mul ,
+ ( bmi /2 ) as divived,
+ (bmi % 2) as modular
+ from medical;
+
+ 
+select * from medical;
+
+-- 5 % of BMI for each records 
+select bmi , bmi + ( bmi * 5 ) /100 as percentage_5
+from medical;
+
+-- comparision 
+select * from medical
+
+-- medical charges less  than 10 ,000
+select * from medical 
+where `medical charges` <10000
+
+select * from medical 
+where `medical charges` >=12000
+ 
+ -- not equal 
+ select * from medical 
+where children <>1
+
+-- logical operator
+
+
+select * from medical 
+where sex ='female' and children=3;
+
+select * from medical 
+where sex ='male' and children=5;
+
+-- 
+select * from medical 
+where smoker ='yes' and region ='northeast'
